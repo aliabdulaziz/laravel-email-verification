@@ -1,0 +1,28 @@
+{
+    "name": "aliabdulaziz/laravel-email-verification",
+    "description": "This Laravel package provides a simple solution for email verification.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Abdulaziz",
+            "email": "ali_almancie@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Aliabdulaziz\\LaravelEmailVerification\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aliabdulaziz\\LaravelEmailVerification\\LaravelEmailVerificationServiceProvider"
+            ],
+            "aliases": {
+                "EmailVerification": "Aliabdulaziz\\LaravelEmailVerification\\LaravelEmailVerificationFacade"
+            }
+        }
+    }
+}
