@@ -1,8 +1,7 @@
-# laravel-extended-user
-This Laravel package adds profile page, account page, and extra features to Laravel's built-in Auth system
+# laravel-email-verification
+This Laravel package provides a simple solution for email verification.
 
 ## Requirements
-- Bootstrap 4
 - Laravel 5.3+
 
 
