@@ -48,7 +48,7 @@ Aliabdulaziz\LaravelExtendedUser\LaravelEmailVerificationServiceProvider::class
 Run the following command to publish the package config file:
 
 ```shell
-php artisan vendor:publish --provider="Aliabdulaziz\LaravelExtendedUser\LaravelEmailVerificationServiceProvider" --tag=config
+php artisan vendor:publish --provider="Aliabdulaziz\LaravelEmailVerification\LaravelEmailVerificationServiceProvider" --tag=config
 ```
 
 The config file is named (laravelemailverification.php) and will be located in the 'config' folder.
@@ -88,7 +88,7 @@ Now you can use this middleware on the routes that you want to prevent from bein
 To customize the package default views publish them to your views folder by running the following command:
 
 ```shell
-php artisan vendor:publish --provider="Aliabdulaziz\LaravelExtendedUser\LaravelEmailVerificationServiceProvider" --tag=views
+php artisan vendor:publish --provider="Aliabdulaziz\LaravelEmailVerification\LaravelEmailVerificationServiceProvider" --tag=views
 ```
 
 Now make whatever customization you want on the published views.
