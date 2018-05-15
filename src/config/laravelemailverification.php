@@ -13,11 +13,8 @@ return [
 
     'email' => [
         'subject' => 'Email Verification',
-        'from' => [
-            'name' => null,
-            'email' => null,
-        ],
-        'message' => null,
+        'from' =>  'laravel@example.com',
+        'message' => 'Please verify your email address.',
     ],
 
 ];

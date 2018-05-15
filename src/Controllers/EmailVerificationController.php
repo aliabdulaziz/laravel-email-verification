@@ -11,17 +11,6 @@ use Aliabdulaziz\LaravelEmailVerification\Mail\EmailVerification;
 
 class EmailVerificationController extends Controller
 {
-
-    /**
-     * for testing
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function test()
-    {
-        return "This is for test";
-    }
-
     /**
      * Show email verification page
      *

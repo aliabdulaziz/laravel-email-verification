@@ -7,7 +7,13 @@ This Laravel package provides a simple solution for email verification.
 
 
 ## Screenshots
-(will be added by tomorrow)
+![Email is not verified](https://raw.githubusercontent.com/Aliabdulaziz/laravel-email-verification/master/screenshots/01.PNG "Email is not verified")
+
+![Verification Mail](https://raw.githubusercontent.com/Aliabdulaziz/laravel-email-verification/master/screenshots/02.PNG "Verification Mail")
+
+![Verification failed](https://raw.githubusercontent.com/Aliabdulaziz/laravel-email-verification/master/screenshots/03.PNG "Verification failed")
+
+![Email is verified](https://raw.githubusercontent.com/Aliabdulaziz/laravel-email-verification/master/screenshots/04.PNG "Email is verified")
 
 
 
@@ -69,6 +75,7 @@ php artisan migrate
 go to your (env) file and make sure that you have configured your mail driver. 
 
 
+
 ## Middleware
 
 Go to: (Your Laravel App) --> app --> Http --> Kernal.php
@@ -81,6 +88,18 @@ and add the following middleware to the $routeMiddleware array:
 
 Now you can use this middleware on the routes that you want to prevent from being accessed by the users who did not verify their emails.
 
+### Example
+
+```php
+Route::middleware(['web', 'auth', 'verifyEmail'])->group(function () {
+
+	// Only users with verified emails can access this route
+	Route::get('verified-email', function () {
+		echo "Your email is verified!";
+	});
+
+});
+```
 
 
 ## Customization
